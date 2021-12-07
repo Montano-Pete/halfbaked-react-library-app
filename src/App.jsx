@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import BookList from './views/Books/BookList'
 import BookDetail from './views/Books/BookDetail'
 import './App.css'
+import Home from './views/Home/Home'
 
 function App() {
   // TODO: Add routes to books & views
@@ -9,7 +10,8 @@ function App() {
     <main className="container">
       <Router>
         <Switch>
-          <Route path="/books" component={BookList} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/books" component={BookList} />
           <Route path="/books/:id" component={BookDetail} />
         </Switch>
       </Router>

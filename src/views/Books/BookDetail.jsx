@@ -15,8 +15,8 @@ function BookDetail() {
 
   return (
     <>
-      <Link to="/books">Catalog</Link>
       <Book book={book} showDetail />
+      <Link to="/books">Catalog</Link>
     </>
   )
 }
