@@ -11,3 +11,5 @@ jobs:
     - run: yarn test
       env:
         CI: true
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
